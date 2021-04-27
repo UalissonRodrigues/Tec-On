@@ -8,43 +8,6 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-<!-- Modal de Mensagem de Erro ou Sucesso-->
- <?php
-    if ($_SESSION['mensagem'] != "") {
-        if ($_SESSION['request'] == 'success') {
-    ?>
-         <script>
-             swal("<?php echo $_SESSION['mensagem'] ?>", "", "success");
-         </script>
-     <?php
-        } else {
-        ?>
-         <script>
-             swal("<?php echo $_SESSION['mensagem'] ?>", "", "error");
-         </script>
- <?php
-        }
-    }
-    ?>
-    <?php
-    $_SESSION['mensagem'] = "";
-    ?>
-<!-- Iscript Para modal da Funcão Delete-->    
- <script>
-     $(document).ready(function() {
-         $('.deletebtn').on('click', function() {
-             $('#ExemploModalCentralizado').modal('show');
-             $tr = $(this).closest('tr');
-             var dados = $tr.children("td").map(function() {
-                 return $(this).text();
-             }).get();
-
-             console.log(dados);
-             $('#delete_id').val(dados[0]);
-
-         });
-     });
- </script>
 
 <!-- Sccript Mascarra para o Numero do Telefone-->
  <script>
@@ -63,6 +26,5 @@
              }
          });
  </script>
-
 
  </html>
