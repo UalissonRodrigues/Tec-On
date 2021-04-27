@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$banco = "crud";
+$banco = "crud-php";
 
 $connect= mysqli_connect($host, $user, $password,$banco);
 mysqli_set_charset($connect,"utf8");
