@@ -21,7 +21,7 @@ include "../include/header.php";
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar" href="index.php">
                     <span class="icon-bar"></span>
                 </button>
-                <!-- end navbar-header -->
+                <!-- end navbar-header -->2
                 <!-- begin navbar-collapse -->
                 <div class="collapse navbar-collapse" id="header-navbar">
                     <ul class="nav navbar-nav navbar-right">
@@ -32,7 +32,15 @@ include "../include/header.php";
                         <li class="nav-item"><a class="nav-link" href="#client" data-click="scroll-to-target">CLIENT</a></li>
                         <li class="nav-item"><a class="nav-link" href="#pricing" data-click="scroll-to-target">PRICING</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact" data-click="scroll-to-target">CONTACT</a></li>
-                        <li class="nav-item"><a href="./login.php" class="nav-link">LOGIN</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="login.php" data-toggle="dropdown" role="buttor">ENTRAR</a>
+                            <div class="dropdown-menu ">
+                                <a class="dropdown-item" href="login.php">LOGIN</a>
+                                <a class="dropdown-item" href="index_inverse_header.html">PERFIL</a>
+                                <a class="dropdown-item" href="../controller/sair.php" id="sair">SAIR</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- end navbar-collapse -->
@@ -838,6 +846,7 @@ include "../include/header.php";
         ga('create', 'UA-53034621-1', 'auto');
         ga('send', 'pageview');
     </script>
+
 </body>
 
 <!-- Mirrored from seantheme.com/color-admin/frontend/one-page-parallax/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Mar 2020 23:44:28 GMT -->

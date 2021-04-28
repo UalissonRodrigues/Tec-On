@@ -18,17 +18,17 @@ include '../controller/dbconexao.php';
 	<link href="../assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 </head>
-<body class="pace-top">
+<body class="pace-top"  >
 	<!-- begin #page-loader -->
-	<div id="page-loader" class="fade show">
+	<div id="page-loader" class="fade show" >
 		<span class="spinner"></span>
 	</div>
 	<!-- end #page-loader -->
 	
 	<!-- begin #page-container -->
-	<div id="page-container" class="fade">
+	<div id="page-container" class="fade"  >
 		<!-- begin login -->
-		<div class="login login-v1">
+		<div class="login login-v1" >
 			<!-- begin login-container -->
 			<div class="login-container">
 				<!-- begin login-header -->
@@ -81,7 +81,7 @@ include '../controller/dbconexao.php';
 
 </body>
 
-!-- ================== BEGIN BASE JS ================== -->
+	<!-- ================== BEGIN BASE JS ================== -->
 	<script src="../assets/js/app.min.js"></script>
 	<script src="../assets/js/theme/apple.min.js"></script>
 	<!-- ================== END BASE JS ================== -->
